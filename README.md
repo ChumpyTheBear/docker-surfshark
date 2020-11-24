@@ -74,10 +74,10 @@ services:
         restart: unless-stopped
 ```
 
-If you want to attach a container to the VPN, you can simply run:
+To manually test the connection attach a container to the VPN, you can simply run:
 
 ```sh
-sudo docker run -it --net=container:CONTAINER_NAME alpine /bin/sh
+docker run -it --net=container:surfshark byrnedo/alpine-curl -L 'https://ipinfo.io'
 ```
 
 If you want access to an attached container's web ui you will also need to expose those ports.  The attached container must not be started until this container is up and fully running.
