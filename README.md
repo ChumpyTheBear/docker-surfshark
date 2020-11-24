@@ -80,4 +80,6 @@ To manually test the connection attach a container to the VPN, you can simply ru
 docker run -it --net=container:surfshark byrnedo/alpine-curl -L 'https://ipinfo.io'
 ```
 
+Use the following for DNS Leak testing https://github.com/macvk/dnsleaktest
+
 If you want access to an attached container's web ui you will also need to expose those ports.  The attached container must not be started until this container is up and fully running.
