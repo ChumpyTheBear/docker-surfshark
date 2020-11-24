@@ -74,12 +74,6 @@ services:
         restart: unless-stopped
 ```
 
-Or you can use the standard `docker run` command.
-
-```sh
-sudo docker run -it --cap-add=NET_ADMIN --device /dev/net/tun --name CONTAINER_NAME -e SURFSHARK_USER=YOUR_SURFSHARK_USER -e SURFSHARK_PASSWORD=YOUR_SURFSHARK_PASSWORD ilteoood/docker-surfshark
-```
-
 If you want to attach a container to the VPN, you can simply run:
 
 ```sh
@@ -87,5 +81,3 @@ sudo docker run -it --net=container:CONTAINER_NAME alpine /bin/sh
 ```
 
 If you want access to an attached container's web ui you will also need to expose those ports.  The attached container must not be started until this container is up and fully running.
-
-If you face network connection problems, I suggest you to set a specific DNS server for each container.
