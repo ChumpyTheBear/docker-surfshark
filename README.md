@@ -53,15 +53,7 @@ services:
         restart: unless-stopped
         dns:
             - 1.1.1.1
-    service_test:
-        image: byrnedo/alpine-curl
-        container_name: alpine
-        command: -L 'https://ipinfo.io'
-        depends_on: 
-            - surfshark
-        network_mode: service:surfshark
-        restart: always
-
+ 
 ```
 
 To manually test the connection attach a container to the VPN, you can simply run:
