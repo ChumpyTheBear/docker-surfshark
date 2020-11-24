@@ -61,17 +61,7 @@ services:
             - surfshark
         network_mode: service:surfshark
         restart: always
-    transmission:
-        image: linuxserver/transmission
-        container_name: transmission
-        environment:
-            - PUID=1000
-            - PGID=1000
-            - TZ=Europe/Rome
-        #ports:
-            #- 9091:9091 needed to access transmission's GUI
-        network_mode: service:surfshark
-        restart: unless-stopped
+
 ```
 
 To manually test the connection attach a container to the VPN, you can simply run:
