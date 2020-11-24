@@ -2,17 +2,6 @@
 
 Docker container with OpenVPN client preconfigured for SurfShark
 
-[![](https://images.microbadger.com/badges/version/ilteoood/docker-surfshark.svg)](https://microbadger.com/images/ilteoood/docker-surfshark "Get your own version badge on microbadger.com")
-[![](https://images.microbadger.com/badges/image/ilteoood/docker-surfshark.svg)](https://microbadger.com/images/ilteoood/docker-surfshark "Get your own image badge on microbadger.com")
-![Build only image](https://github.com/ilteoood/docker-surfshark/workflows/Build%20only%20image/badge.svg?branch=master)
-
-------------------------------------------------
-<p align="center">
-    <img src="https://github.com/ilteoood/docker-surfshark/raw/master/images/logo.png" alt="logo"/>
-</p>
-
-This is a [multi-arch](https://medium.com/gft-engineering/docker-why-multi-arch-images-matters-927397a5be2e) image, updated automatically thanks to [GitHub Actions](https://github.com/features/actions).
-
 Its purpose is to provide the [SurfShark VPN](https://surfshark.com/) to all your containers. 
 
 The link is established using the [OpenVPN](https://openvpn.net/) client.
