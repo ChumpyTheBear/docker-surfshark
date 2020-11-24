@@ -1,6 +1,6 @@
 #!/bin/sh
 rm -rf ovpn_configs*
-wget -O --no-check-certificate ovpn_configs.zip https://api.surfshark.com/v1/server/configurations
+wget --no-check-certificate -O ovpn_configs.zip https://api.surfshark.com/v1/server/configurations
 unzip ovpn_configs.zip -d ovpn_configs
 cd ovpn_configs
 VPN_FILE=$(ls "${SURFSHARK_COUNTRY}"* | grep "${SURFSHARK_CITY}" | grep "${CONNECTION_TYPE}" | shuf | head -n 1)
