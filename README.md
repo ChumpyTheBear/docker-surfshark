@@ -27,7 +27,7 @@ The container is configurable using 5 environment variables:
 
 ## Execution
 
-You can run this image using [Docker compose](https://docs.docker.com/compose/) and the [sample file](./docker-compose.yml) provided.
+You can run this image using [Docker compose](https://docs.docker.com/compose/)
 ** Remember: if you want to use the web gui of a container, you must open its ports on `docker-surfshark` as described below. **
 
 ```
