@@ -35,7 +35,7 @@ version: "2"
 
 services: 
     surfshark:
-        image: ilteoood/docker-surfshark
+        build: https://github.com/ChumpyTheBear/docker-surfshark.git
         container_name: surfshark
         environment: 
             - SURFSHARK_USER=YOUR_SURFSHARK_USER
