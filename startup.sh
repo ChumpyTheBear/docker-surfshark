@@ -4,7 +4,7 @@ wget --no-check-certificate -O ovpn_configs.zip https://api.surfshark.com/v1/ser
 unzip ovpn_configs.zip -d ovpn_configs
 cd ovpn_configs
 VPN_FILE=$(ls "${SURFSHARK_COUNTRY}"* | grep "${SURFSHARK_CITY}" | grep "${CONNECTION_TYPE}" | shuf | head -n 1)
-echo Chose: ${VPN_FILE}
+echo Using file: ${VPN_FILE}
 printf "${SURFSHARK_USER}\n${SURFSHARK_PASSWORD}" > vpn-auth.txt
 
 if [ -n ${LAN_NETWORK}  ]
