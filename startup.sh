@@ -21,8 +21,6 @@ ufw default deny incoming
 ufw allow out on tun0 from any to any
 ufw allow out on eth0 to any port 1194 proto udp
 ufw allow out on eth0 to 1.1.1.1 port 53 proto udp
-ufw allow in to ${LAN_NETWORK}
-ufw allow out to ${LAN_NETWORK}
 ufw enable
 
 openvpn --config $VPN_FILE --auth-user-pass vpn-auth.txt
