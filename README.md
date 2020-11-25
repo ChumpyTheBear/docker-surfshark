@@ -19,7 +19,8 @@ The container is configurable using 5 environment variables:
 |CONNECTION_TYPE|No|The connection type that you want to use: tcp, udp|
 |LAN_NETWORK|Yes|Lan network used to access the web ui of attached containers. Comment out or leave blank: example 192.168.0.0/24|
 
-`SURFSHARK_USER` and `SURFSHARK_PASSWORD` are provided at the bottom of this page: [https://account.surfshark.com/setup/manual](https://account.surfshark.com/setup/manual).
+`SURFSHARK_USER` and `SURFSHARK_PASSWORD` are provided at this page, under the "Credentials" tab: [https://my.surfshark.com/vpn/manual-setup/main](https://my.surfshark.com/vpn/
+`SURFSHARK_COUNTRY` and `SURFSHARK_CITY` codes can be found at this page, under the "Files" tab: [https://my.surfshark.com/vpn/manual-setup/main](https://my.surfshark.com/vpn/manual-setup/main)
 
 <p align="center">
     <img src="https://support.surfshark.com/hc/article_attachments/360038503393/mceclip0.png" alt="SurfShark credentials"/>
