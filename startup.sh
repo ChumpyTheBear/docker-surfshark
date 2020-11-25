@@ -14,4 +14,10 @@ then
     echo Adding ip route add "${LAN_NETWORK}" via "${DEFAULT_GATEWAY}" dev eth0 for attached container web ui access
     echo Do not forget to expose the ports for attached container we ui access
 fi
+
+ufw default deny outgoing
+ufw default deny incoming
+ufw allow out on tun0 from any to any
+ufw allow out on eth0 to any port 1194 proto udp
+
 openvpn --config $VPN_FILE --auth-user-pass vpn-auth.txt
