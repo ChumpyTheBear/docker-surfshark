@@ -20,7 +20,7 @@ ufw default deny outgoing
 ufw default deny incoming
 ufw allow out on tun0 from any to any
 ufw allow out on eth0 to any port 1194 proto udp
-ufw allow out on eth0 to ${LAN_NETWORK} port 53 proto udp
+ufw allow out on eth0 to 1.1.1.1 port 53 proto udp
 ufw allow in on eth0 from ${LAN_NETWORK} to any
 ufw enable
 
