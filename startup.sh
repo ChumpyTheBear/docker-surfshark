@@ -15,9 +15,11 @@ then
     echo Do not forget to expose the ports for attached container we ui access
 fi
 
+echo "IPV6=no" >> /etc/default/ufw
 ufw default deny outgoing
 ufw default deny incoming
 ufw allow out on tun0 from any to any
 ufw allow out on eth0 to any port 1194 proto udp
+ufw enable
 
 openvpn --config $VPN_FILE --auth-user-pass vpn-auth.txt
