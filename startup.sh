@@ -23,6 +23,8 @@ ufw allow out on eth0 to any port 1194 proto udp
 ufw allow out on eth0 to 1.1.1.1 port 53 proto udp
 ufw allow in to ${LAN_NETWORK}
 ufw allow out to ${LAN_NETWORK}
+ufw allow in to 192.168.48.0/20
+ufw allow out to 192.168.48.0/20
 ufw enable
 
 openvpn --config $VPN_FILE --auth-user-pass vpn-auth.txt
