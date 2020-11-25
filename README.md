@@ -58,7 +58,7 @@ services:
  
 ```
 
-To manually test the connection attach a container to the VPN, you can simply run:
+To manually test the connection run the following:
 
 ```sh
 docker run -it --net=container:surfshark byrnedo/alpine-curl -L 'https://ipinfo.io'
