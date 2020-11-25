@@ -16,5 +16,6 @@ RUN apt-get update \
     unzip \
     coreutils \
     ufw \
+    iputils-ping \
     curl && chmod +x ./startup.sh && rm -rf /var/lib/apt/lists/*
 ENTRYPOINT [ "./startup.sh" ]
