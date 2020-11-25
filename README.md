@@ -17,7 +17,7 @@ The container is configurable using 5 environment variables:
 |SURFSHARK_COUNTRY|No|The country, supported by SurfShark, in which you want to connect|
 |SURFSHARK_CITY|No|The city of the country in which you want to connect|
 |CONNECTION_TYPE|No|The connection type that you want to use: tcp, udp|
-|LAN_NETWORK|No|Lan network used to access the web ui of attached containers. Comment out or leave blank: example 192.168.0.0/24|
+|LAN_NETWORK|Yes|Lan network used to access the web ui of attached containers. Comment out or leave blank: example 192.168.0.0/24|
 
 `SURFSHARK_USER` and `SURFSHARK_PASSWORD` are provided at the bottom of this page: [https://account.surfshark.com/setup/manual](https://account.surfshark.com/setup/manual).
 
