@@ -17,5 +17,6 @@ RUN apt-get update \
     unzip \
     coreutils \
     ufw \
+    dnsutils \
     curl && chmod +x ./startup.sh
 ENTRYPOINT [ "./startup.sh" ]
