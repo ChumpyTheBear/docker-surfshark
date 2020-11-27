@@ -17,7 +17,8 @@ The container is configurable using 5 environment variables:
 |SURFSHARK_COUNTRY|No|The country, supported by SurfShark, in which you want to connect|
 |SURFSHARK_CITY|No|The city of the country in which you want to connect|
 |CONNECTION_TYPE|No|The connection type that you want to use: tcp, udp|
-|LAN_NETWORK|Yes|Lan network used to access the web ui of attached containers. Example 192.168.0.0/24|
+|LAN_NETWORK|No|Lan network used to access the web ui of attached containers. Example 192.168.0.0/24|
+|ENABLE_DOCKERNETWORK|No|Enables firewall rule to allow incoming connections from default internal Docker network. Leave blank to disable|
 
 `SURFSHARK_USER` and `SURFSHARK_PASSWORD` are provided at this page, under the "Credentials" tab: [https://my.surfshark.com/vpn/manual-setup/main](https://my.surfshark.com/vpn/)
 
@@ -45,7 +46,8 @@ services:
             - SURFSHARK_COUNTRY=it
             - SURFSHARK_CITY=mil
             - CONNECTION_TYPE=udp
-            - LAN_NETWORK=
+            - LAN_NETWORK=192.168.1.0/24
+            - ENABLE_DOCKERNETWORK=1 
         cap_add: 
             - NET_ADMIN
         devices:

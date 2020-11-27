@@ -8,6 +8,7 @@ ENV SURFSHARK_COUNTRY=
 ENV SURFSHARK_CITY=
 ENV CONNECTION_TYPE=udp
 ENV LAN_NETWORK=
+ENV ENABLE_DOCKERNETWORK= 
 COPY startup.sh .
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
