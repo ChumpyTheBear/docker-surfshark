@@ -9,7 +9,7 @@ printf "${SURFSHARK_USER}\n${SURFSHARK_PASSWORD}" > vpn-auth.txt
 
 echo Setting up UFW
 echo "IPV6=no" >> /etc/default/ufw
-ufw reset
+ufw --force reset
 ufw default deny outgoing
 ufw default deny incoming
 ufw allow out on tun0 from any to any
