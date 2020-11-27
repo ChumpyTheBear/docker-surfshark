@@ -29,6 +29,7 @@ fi
 if [ -n ${ENABLE_DOCKERNETWORK}  ]
 then
     ufw allow in on eth0 from 172.17.0.0/16 to any
+    ufw allow in on eth0 from 172.18.0.0/16 to any
     echo Added firewall rule to allow incoming connections from default internal Docker network
 fi
 
