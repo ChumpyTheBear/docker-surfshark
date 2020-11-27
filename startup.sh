@@ -7,7 +7,7 @@ VPN_FILE=$(ls "${SURFSHARK_COUNTRY}"* | grep "${SURFSHARK_CITY}" | grep "${CONNE
 echo Using file: ${VPN_FILE}
 printf "${SURFSHARK_USER}\n${SURFSHARK_PASSWORD}" > vpn-auth.txt
 
-echo Setting up UFW
+echo Setting up UFW and reset rules
 echo "IPV6=no" >> /etc/default/ufw
 ufw --force reset
 ufw default deny outgoing
