@@ -10,7 +10,7 @@ The link is established using the [OpenVPN](https://openvpn.net/) client.
 
 ## Configuration
 
-The container is configurable using 5 environment variables:
+The container is configurable using 7 environment variables:
 
 | Name | Mandatory | Description |
 |------|-----------|-------------|
