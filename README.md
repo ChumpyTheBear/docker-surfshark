@@ -1,5 +1,7 @@
 # docker-surfshark
 
+Thanks to https://github.com/ilteoood/docker-surfshark
+
 Docker container with OpenVPN client preconfigured for SurfShark
 
 Its purpose is to provide the [SurfShark VPN](https://surfshark.com/) to all your containers. 
